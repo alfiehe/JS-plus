@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="#" />
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Tab</title>
+</head>
+<body>
+
+  <section class="tab J_tab">
+    <ul class="tab-nav">
+      <li class="tab-nav-label current">nav1</li>
+      <li class="tab-nav-label">nav2</li>
+      <li class="tab-nav-label">nav3</li>
+    </ul>
+    <div class="tab-content">
+      <div class="tab-item current">item1</div>
+      <div class="tab-item">item2</div>
+      <div class="tab-item">item3</div>
+    </div>
+  </section>
+
+  <script src="./js/tools.js"></script>
+  <script src="./js/index.js"></script>
+  <script>
+    var tab = new Tab({
+      el: '.J_tab'
+    }).init();
+  </script>
+  
+</body>
+</html>
